@@ -1,0 +1,8 @@
+# Dependencias del proyecto (pip install -r requirements.txt)
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+ydata-profiling
+jupyter

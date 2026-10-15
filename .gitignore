@@ -1,0 +1,11 @@
+# Datos del caso (propiedad de Darden Business Publishing): no se publican
+*.csv
+eda_report.html
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Jupyter y Python
+.ipynb_checkpoints/
+__pycache__/
