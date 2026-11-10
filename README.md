@@ -1,4 +1,4 @@
-# EDA: retención de grupos escolares en Scholastic Travel Company
+# Retención de grupos escolares en Scholastic Travel Company (EDA)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
@@ -6,7 +6,11 @@
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
-Proyecto académico de análisis exploratorio basado en el caso *Retention Modeling at Scholastic Travel Company (A)*. Analizo **2.389 grupos escolares** y **56 variables** (programa, grados, tipo de colegio, fechas de salida, precio, participantes, reuniones con padres y retención) para entender la calidad de los datos y qué factores se asocian con la **retención en 2012** (`Retained.in.2012.`).
+## Problema de negocio
+
+Una empresa que organiza viajes educativos para colegios depende de que los mismos grupos vuelvan a contratar cada año. Su equipo comercial tiene tiempo limitado, así que necesita saber **qué grupos tienen más riesgo de no repetir** para concentrar ahí el seguimiento, en lugar de tratar a todos por igual.
+
+Este proyecto es el primer paso de esa pregunta: un análisis exploratorio de **2.389 grupos escolares** y **56 variables** (programa, grados, tipo de colegio, fechas de salida, precio, participantes, reuniones con padres y retención) para entender la calidad de los datos y qué factores se asocian con la **retención en 2012** (`Retained.in.2012.`). Es un proyecto académico basado en el caso *Retention Modeling at Scholastic Travel Company (A)*.
 
 ## Hallazgos principales
 
@@ -26,6 +30,12 @@ Las reuniones con padres (`Parent.Meeting.Flag`) casi no muestran relación con 
 ![Tasa de retención por categoría](imagenes/retencion_por_categoria.png)
 
 ![Correlación con la retención](imagenes/correlacion_retencion.png)
+
+## Qué significa para el negocio
+
+- **Dónde está el riesgo:** los clientes nuevos con viajes de varios grados retienen 22,5 %, frente a 85,5 % de los clientes existentes con un solo grado. Ese primer segmento es el candidato natural para el seguimiento comercial.
+- **Una palanca que no parece serlo:** hacer reuniones con padres casi no se asocia con que el grupo repita, así que no la usaría como argumento de retención sin más evidencia.
+- **Límite de este análisis:** son asociaciones sobre un solo año. No demuestran que cambiar un factor cambie la retención, y falta un modelo que combine las variables y se evalúe con datos que no haya visto.
 
 ## Calidad de datos
 
